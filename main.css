@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: auto;
+	box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --clr:#ac54af;
+    --navclr:black;
+    
+}
+body{
+	
+  background-image:url("image/horo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+#nav-bar{
+    position:relative;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid aqua;
+    background: var(--navclr);
+    z-index: 100;
+}
+#nav-bar h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.75em;
+    text-transform: capitalize;
+    padding-left: 40px;
+    color: white;
+}
+.container{
+    position: relative;
+    border-radius: 5px;
+	width: 600px;
+	height: 600px;
+    padding-top: 10px;
+	margin: 0 auto;
+    border: none;
+    border-left: 1px solid grey;
+}
+.container #info-area{
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+}
+.container label{
+	font-size: 1.5em;
+}
+.container button{
+    background: black;
+    outline: none;
+    border: none;
+    border-radius:5px;
+    width: 80px;
+    height: fit-content;
+    padding: 15px;
+    color: white;
+}
+button{
+    font-size:1.1em;
+}
+button:hover{
+    background-color: rgb(206, 33, 33);
+    color:black ;
+    font-size: 1.12em;
+    font-weight: 500;
+}
+.container input[type ="date"]{
+	font-size: 18px;
+	color: #000;
+	padding: 5px;
+	background-color:white;
+	border: none;
+	border-radius: .4rem;
+}
+
+  .container .horo-cont{
+    position: absolute;
+    top: 30%;
+	width: 100%;
+    height:200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    color: white;
+} 
+.container .horo-cont .horoName{
+	font-size:2.5em;
+	text-transform: capitalize;
+	text-align: center;
+	font-family: 600;
+    opacity: 0.7;
+}
+.container .horo-cont .horo-descript{
+	font-size: 1.75em;
+    margin: 5px;
+}
+label{
+	color: #fff;
+}
+.hide{
+	/* display: none; */
+	opacity: 0;
+}
+/* -----------------------------MEDIA QUERIES-------------------------------------- */
+@media all and (max-width:755px) {
+  body{
+    height:150vh
+  }
+.container{
+	width: 500px;
+	height: 100vh;
+}
+}
+@media all and (max-width:520px) {
+	body{
+		height: 110vh;
+	}
+	.container{
+		width: 350px;
+		height: 120vh;
+	}
+  .container{
+    height:110vh
+  }
+	.field{
+		flex-direction: column;
+	}
+	.horo-cont{
+		margin-top: 2rem;
+	}
+	.btn{
+		margin-top: 4rem;
+	}
+	}
